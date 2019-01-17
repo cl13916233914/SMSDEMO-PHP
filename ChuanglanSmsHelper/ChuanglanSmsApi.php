@@ -105,7 +105,7 @@ class ChuanglanSmsApi {
 		curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1 );
 		curl_setopt( $ch, CURLOPT_POST, 1 );
         curl_setopt( $ch, CURLOPT_POSTFIELDS, $postFields);
-        curl_setopt( $ch, CURLOPT_TIMEOUT,60); 
+        curl_setopt( $ch, CURLOPT_TIMEOUT,5); 
         curl_setopt( $ch, CURLOPT_SSL_VERIFYHOST, 0);
         curl_setopt( $ch, CURLOPT_SSL_VERIFYPEER, 0);
 		$ret = curl_exec ( $ch );
